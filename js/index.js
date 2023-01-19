@@ -15,13 +15,14 @@ let snackText = document.getElementById("snacktext");
 
 document.querySelectorAll(".password-field").forEach((e) => {
     e.addEventListener('click', () => {
-        navigator.clipboard.writeText(e.textContent);
-        snackText.style.opacity = 1;
-        setTimeout(() => {
-            snackText.style.opacity = 0;
-        }, 1000);
-
-        console.log('copied to clipboard!');
+        if (e.textContent !== "") {
+            navigator.clipboard.writeText(e.textContent);
+            snackText.style.opacity = 1;
+            setTimeout(() => {
+                snackText.style.opacity = 0;
+            }, 1000);
+            console.log('copied to clipboard!');
+        }
     });
 });
 
