@@ -1,0 +1,48 @@
+<!-- Author: Justine George -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2f3e53">
+    <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+    <meta name="theme-color" content="#2f3e53">
+    <meta name="description" content="Generate secure, random passwords with ease using this simple and intuitive Password Generator web app, copy your generated password with one click to paste it wherever you need it.">
+    <title>Password Generator Online</title>
+</head>
+
+<body class="dark-theme">
+    <div class="container not-selectable">
+        <div class="top">
+            <div class="top-left">
+                <h1>Generate a <br><span class="main-title-text">random password</span></h1>
+                <p>Never use an insecure password again.</p>
+            </div>
+            <div class="top-right">
+                <span class="material-symbols-outlined" id="theme-btn">sunny</span>
+            </div>
+        </div>
+        <button id="generate-btn">Generate passwords</button>
+        <div class="divider"></div>
+
+        <div class="password-section">
+            <div class="password-field" id="password-field-1"><span class="ptext" id="ptext-1"></span></div>
+            <div class="password-field" id="password-field-2"><span class="ptext" id="ptext-2"></span></div>
+        </div>
+        <div class="snackbar">
+            <span id="snacktext">Copied to clipboard!</span>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

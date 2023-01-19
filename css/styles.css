@@ -1,0 +1,156 @@
+/* Author: Justine George */
+.not-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url("../assets/fonts/Inter-Regular.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter-Light';
+    src: url("../assets/fonts/Inter-Light.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url("../assets/fonts/Inter-ExtraBold.ttf");
+    font-display: swap;
+}
+
+.dark-theme {
+    --body-background-color: #1F2937;
+    --body-color: #ffffff;
+    --main-title-text-color: #4ADF86;
+    --p-color: #D5D4D8;
+    --button-text-color: #ffffff;
+    --button-background-color: #10B981;
+    --divider-border-top-color: #2F3E53;
+    --password-field-background-color: #273549;
+    --password-field-color: #55F991;
+    --theme-btn-color: #ffffff;
+}
+
+.light-theme {
+    --body-background-color: #ECFDF5;
+    --body-color: #2B283A;
+    --main-title-text-color: #10B981;
+    --p-color: #6B7280;
+    --button-text-color: #ffffff;
+    --button-background-color: #10B981;
+    --divider-border-top-color: #D5D4D8;
+    --password-field-background-color: #273549;
+    --password-field-color: #5DEF92;
+    --theme-btn-color: #2B283A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter-Regular', Arial, sans-serif;
+    color: var(--body-color);
+    background-color: var(--body-background-color);
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-right {
+    align-self: flex-start;
+}
+#theme-btn {
+    padding: 8px;
+    cursor: pointer;
+    color: var(--theme-btn-color);
+}
+
+h1 {
+    margin: 0 auto 10px;
+    font-family: 'Inter-ExtraBold', Arial, sans-serif;
+}
+.main-title-text {
+    color: var(--main-title-text-color);
+}
+p {
+    margin: 0 auto 50px;
+    font-family: 'Inter-Light', Arial, sans-serif;
+    color: var(--p-color);
+    font-size: 16px;
+}
+
+#generate-btn {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid var(--divider-border-top-color);
+    margin-bottom: 25px;
+}
+
+.password-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.password-field {
+    background-color: var(--password-field-background-color);
+    font-size: 16px;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    color: var(--password-field-color);
+    padding: 4px 16px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    margin: 10px 0 10px;
+    cursor: pointer;
+}
+#password-field-1 {
+    justify-self: flex-start;
+}
+#password-field-2 {
+    justify-self: flex-end;
+}
+.ptext {
+    transition: opacity 0.15s ease;
+    opacity: 0;
+}
+
+#snacktext {
+    margin: 0;
+    font-size: 13px;
+    transition: opacity 0.25s ease;
+    opacity: 0;
+}
